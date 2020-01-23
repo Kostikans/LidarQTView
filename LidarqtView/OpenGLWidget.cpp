@@ -30,7 +30,7 @@ void LidarViewWidget::initializeGL()
 
 	initShaders();
 	//points = parser.ReadAndCreate("G://download//Dendro//dendro.las");
-	points = parser.Read("C://Users//ea56//source//repos//lidar//lidar//Layers1//5_0layer.las");
+	points = parser.Read("C://Users//ea56//source//repos//LidarqtView//LidarqtView//Layers1//5_0layer.las");
 
 	vbo.create();
 	vbo.bind();
@@ -78,7 +78,7 @@ void LidarViewWidget::paintGL()
 
 void LidarViewWidget::initShaders()
 {
-	shader = new Shader("C://Users//ea56//source//repos//lidar//lidar//PointShader.vs", "C://Users//ea56//source//repos//lidar//lidar//PointShader.fs");
+	shader = new Shader("C://Users//ea56//source//repos//LidarqtView//LidarqtView//PointShader.vs", "C://Users//ea56//source//repos//LidarqtView//LidarqtView//PointShader.fs");
 }
 
 void LidarViewWidget::initBuffer()
